@@ -1,1 +1,1 @@
-.\vendor\bin\phpunit --color=always
+.\vendor\bin\phpunit --colors=always --coverage-text="coverage.txt"
