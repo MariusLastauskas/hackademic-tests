@@ -17,7 +17,7 @@ class UtilsTest extends TestCase {
         Utils::defineConstants();
 
         $this->assertTrue(defined('HACKADEMIC_PATH'));
-        $this->assertEquals(HACKADEMIC_PATH, 'D:/Programs/xampp5/htdocs/hackademic/');
+        $this->assertEquals(HACKADEMIC_PATH, 'D:/Programs/xampp5/htdocs/hackademic-tests/');
         $this->assertTrue(defined('GLOBAL_CLASS_ID'));
         $this->assertEquals(GLOBAL_CLASS_ID, 1);
         $this->assertTrue(defined('DEFAULT_RULES_ID'));
