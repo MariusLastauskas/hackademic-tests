@@ -3,14 +3,14 @@
 <phpunit bootstrap="vendor/autoload.php" colors="always" verbose="true">
     <testsuites>
         <testsuite name="Unit Tests">
-            <directory suffix='.php'>./tests/unit/gen/</directory>
+            <directory suffix='.php'>./tests/unit/model/</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist>
+            <!-- <directory>model/common/class.User.php</directory> -->
             <directory>model</directory>
-            <!-- <directory>admin</directory> -->
         </whitelist>
     </filter>
 </phpunit>
