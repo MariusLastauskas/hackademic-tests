@@ -58,7 +58,7 @@ class User {
 		return !empty($result_array)?array_shift($result_array):false;
 	}
 
-	public static function getUser($id) {
+	public function getUser($id) {
 		global $db;
 		$sql = "SELECT * FROM users WHERE id = :id LIMIT 1";
 		$params = array(
@@ -68,7 +68,7 @@ class User {
 		return !empty($result_array)?array_shift($result_array):false;
 	}
 
-	private static function findBySQL($sql, $params = NULL) {
+	public function findBySQL($sql, $params = NULL) {
 		global $db;
 		$result_set=$db->query($sql, $params);
 		$object_array=array();
@@ -265,7 +265,7 @@ class User {
 		}
 	}
 
-	public static function deleteUser($id){
+	public function deleteUser($id){
 		global $db;
 		$sql = "DELETE FROM users WHERE id=:id";
 		$params = array(

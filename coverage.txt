@@ -1,19 +1,19 @@
 
 
 Code Coverage Report:       
-  2019-10-26 21:44:19       
+  2019-10-30 08:07:30       
                             
  Summary:                   
   Classes:  0.00% (0/16)    
-  Methods: 19.42% (27/139)  
-  Lines:   21.59% (283/1311)
+  Methods: 20.86% (29/139)  
+  Lines:   23.95% (314/1311)
 
 ChallengeAttempts
   Methods:   0.00% ( 0/20)   Lines:   3.30% (  6/182)
 HackademicDB
   Methods:  62.50% ( 5/ 8)   Lines:  74.19% ( 23/ 31)
 PasswordHash
-  Methods:  44.44% ( 4/ 9)   Lines:  61.42% ( 78/127)
+  Methods:  66.67% ( 6/ 9)   Lines:  85.83% (109/127)
 User
   Methods:  81.25% (13/16)   Lines:  96.93% (158/163)
 UserHasChallengeToken

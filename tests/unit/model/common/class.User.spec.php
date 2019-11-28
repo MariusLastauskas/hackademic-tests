@@ -18,7 +18,7 @@ class UserTest extends TestCase {
         User::addUser('testUser1', 'Test User1', 'test.user1@email.com', 'testPass', true, 1, 1);
         $user1 = User::findByUserName('testUser1');
         $user_vals1 = get_object_vars($user1);
-        
+
         User::addUser('testUser2', 'Test User2', 'test.user2@email.com', 'testPass', true, 1, 1);
         $user2 = User::findByUserName('testUser2');
         $user_vals2 = get_object_vars($user2);
@@ -39,6 +39,34 @@ class UserTest extends TestCase {
         
         $this->assertEquals($user_vals['username'], 'testUser1');
     }
+
+//    public function testUserGetMock() {
+//        $mock = $this->getMockBuilder(User::class)
+//            ->setMethods(['findBySQL'])
+//            ->getMock();
+//
+//        $mock->expects($this->once())
+//            ->method('findBySQL');
+//
+//        $user = new User();
+//        $user->getUser(-1);
+//    }
+//
+//    public function testUserGetStub() {
+//        global $userId;
+//
+//        $stub = $this->getMockBuilder(User::class)
+//            ->setMethods(['findBySQL'])
+//            ->getMock();
+//
+//        $stub->expects($this->any())
+//            ->method('findBySQL')
+//            ->will($this->returnValue(false));
+//
+//        $user = new User();
+//
+//        $this->assertFalse($user->getUser($userId[0]));
+//    }
 
     public function testFindByUserName() {
         $user = User::findByUserName('testUser1');

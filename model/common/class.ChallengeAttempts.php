@@ -92,7 +92,7 @@ class ChallengeAttempts {
 		}
 	}
 
-	public static function deleteChallengeAttemptByUser($user_id){
+	public function deleteChallengeAttemptByUser($user_id){
 		global $db;
 		$params=array(':user_id' => $user_id);
 		$sql = "DELETE FROM challenge_attempts WHERE user_id=:user_id";
